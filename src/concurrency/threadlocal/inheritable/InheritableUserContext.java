@@ -1,7 +1,9 @@
-package concurrency.threadlocal;
+package concurrency.threadlocal.inheritable;
 
-public class UserContext {
-    private static ThreadLocal<UserInfo> userInfoThreadLocal = new ThreadLocal<>();
+import concurrency.threadlocal.UserInfo;
+
+public class InheritableUserContext {
+    private static InheritableThreadLocal<UserInfo> userInfoThreadLocal = new InheritableThreadLocal<>();
 
     public static void setUserIdAndUserName(UserInfo userInfo) {
         userInfoThreadLocal.set(userInfo);

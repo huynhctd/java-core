@@ -16,4 +16,9 @@ public class UserInfo {
     public String getUserName() {
         return this.userName;
     }
+
+    @Override
+    public String toString() {
+        return "{" + "userId : "+ this.userId + ", " + "userName : " + this.userName + "}";
+    }
 }
