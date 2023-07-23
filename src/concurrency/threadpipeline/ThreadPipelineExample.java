@@ -42,6 +42,6 @@ public class ThreadPipelineExample {
 
 
 
-        threadPipeline.runStep();
+        threadPipeline.runSteps();
     }
 }

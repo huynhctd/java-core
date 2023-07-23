@@ -23,7 +23,7 @@ public class ThreadPipeline {
         return this.outputQueue;
     }
 
-    public void runStep() {
+    public void runSteps() {
         List<Thread> threadList = new ArrayList<>();
         for(int i=0; i < processors.size(); i++) {
             threadList.add(new Thread(processors.get(i)));
