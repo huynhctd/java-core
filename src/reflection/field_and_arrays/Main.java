@@ -118,7 +118,7 @@ public class Main {
         String space = tabNumber > 0 ? "    ".repeat(tabNumber) : "";
         StringBuilder stringBuilder =  new StringBuilder();
         stringBuilder.append("[ ");
-        stringBuilder.append("\n ");
+        stringBuilder.append("\n");
         int length = Array.getLength(obj);
         for (int i = 0; i < length; i ++) {
             Object element = Array.get(obj, i);
